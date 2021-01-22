@@ -209,8 +209,11 @@ Practice accessing data above by console.log-ing following items:
 
 //(1) Name of the first artist (0th index) in the array
 
+console.log(artists[0].name)
 
 //(2) Bio of the third artist (2nd index) in the array 
+
+console.log(artists[2].bio)
 
 
 
@@ -218,7 +221,14 @@ Practice accessing data above by console.log-ing following items:
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+// artists[8].name; {
+//   return artists[8].shift;
+// }
+// console.log(artists);
 
+// artists[8].name).unshift;{
+//   return (artists[8].name ('Vincent Van Gough'));
+// }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -228,10 +238,9 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(artists, name) {
+  return (`the artists at ${artists} is ${name}.`);
 }  
-
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -242,10 +251,19 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+function get20s(artists.years){
+  if (years > 1899 && years < 2000)
 }
+  return (artists.name)
 
+
+function get20s(artists.years)
+  for (let born > 1900; born < 2000; born++) {
+    else if (let death = 2000; 2000 < death; death++)
+  }
+    console.log (artists.years[i].includes('> 1900' && < '2000'))
+  }
+}
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -257,9 +275,10 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(artists[num]) {
+   return (artists[num].pop);
 }
+console.log removeArtists(artists[8]);
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -278,9 +297,10 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(artists.push){
+    return (artists.push ({id: 20, name: 'Tim', years: '1991 - 2021', genre: 'Web Design', nationality: 'English' bio: 'Imposter syndrome is real, but here I am, endeavoring, and doing my best. Huzzah!' }));
   }
+console.log (addArtist)
 
   
 
