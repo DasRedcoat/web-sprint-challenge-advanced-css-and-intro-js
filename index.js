@@ -238,8 +238,8 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(artists, name) {
-  return (`the artists at ${artists} is ${name}.`);
+function getArtistByIndex(artists[num]){
+  return (`the artists at index ${artists[num]} is ${artists[num].name:}.`);
 }  
 
 
@@ -252,18 +252,16 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(artists.years){
-  if (years > 1899 && years < 2000)
+  if (artists.years > 1899 && artists.years < 2000)
 }
-  return (artists.name)
-
+  return(artists.name)
 
 function get20s(artists.years)
-  for (let born > 1900; born < 2000; born++) {
+  for (i = years; i > 1900 && i < 2000){
     else if (let death = 2000; 2000 < death; death++)
   }
-    console.log (artists.years[i].includes('> 1900' && < '2000'))
-  }
-}
+  console.log(artists.years[i].includes('> 1900' && < '2000'))
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -276,9 +274,10 @@ function get20s(artists.years)
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(artists[num]) {
-   return (artists[num].pop);
+  console.log (artists[num].pop)
+  return (artists.length);
 }
-console.log removeArtists(artists[8]);
+console.log removeArtists(artists[0]);
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -311,8 +310,9 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(artists){
+  if (artists.paintings > 100)
+  return (artist.name);
 }
 
 
