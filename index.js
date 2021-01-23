@@ -277,7 +277,7 @@ function removeArtist(artists[num]) {
   return (artists.length);
 }
 console.log removeArtists(artists[0]);
-   
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -309,11 +309,16 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(artists){
-  if (artists.paintings > 100)
-  return (artist.name);
+function lotsOfArt(artists) {
+  let OverOneHundred = []
+  for (i = 0; i < artists.length; i++) {
+    if (artists.paintings[0] >= 100) {
+      OverOneHundred.push(artists[i].name);
+    }
+  }
+  return OverOneHundred;
 }
-
+console.log (lotsOfArt)
 
 
 
