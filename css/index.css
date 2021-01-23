@@ -134,3 +134,6 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/* Mobile */
+@media (max-width: 500px)

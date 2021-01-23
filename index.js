@@ -238,10 +238,10 @@ There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is current
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(artists[num]){
-  return (`the artists at index ${artists[num]} is ${artists[num].name:}.`);
-}  
-
+function getArtistByIndex(num) {
+  return (`the artists at index ${num} is ${artists[num].name}.`);
+}
+console.log(getArtistByIndex(0))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
@@ -251,18 +251,17 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(artists.years){
-  if (artists.years > 1899 && artists.years < 2000)
-}
-  return(artists.name)
-
-function get20s(artists.years)
-  for (i = years; i > 1900 && i < 2000){
-    else if (let death = 2000; 2000 < death; death++)
+function get20s(artists) {
+  let ArtistsOf20thCentury = [];
+  for (i = 0; i < artists.length; i++) {
+    let years = artists[i].years.split(" - ");
+    if (parseInt(years[0]) >= 1900 && parseInt(years[1]) <= 2000) {
+      ArtistsOf20thCentury.push(artists[i].name);
+    }
   }
-  console.log(artists.years[i].includes('> 1900' && < '2000'))
-
-
+  return ArtistsOf20thCentury;
+}
+console.log(get20s(artists))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
