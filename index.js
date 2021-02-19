@@ -300,7 +300,15 @@ Example: addArtist(artists) should return the artists array with the above objec
 // } 
 
 function addArtist(array){
-    // return (array.push() 
+    array.push( {
+      id: 20,
+      name: "Tim", 
+      years: "1991 - current day",
+      genre: "Web Design", 
+      nationality: "British",
+      bio: "I will rue this day"
+    });
+    return array
   }
 
   
@@ -312,7 +320,7 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
+function lotsOfArt(/*Your Code Here*/) {
   /*Your Code Here*/
 }
 
