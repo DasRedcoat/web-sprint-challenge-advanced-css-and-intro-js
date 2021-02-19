@@ -245,9 +245,16 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array) {
-  if (array)
+  let ArtistsOf20thCentury = []; // declare an empty array for the result
+  for (let i = 0; i < artists.length; i++) {  // loop through the artists array
+    let years = artists[i].years.split(" - "); // declare a year variable that splits the dividing dash out of the string, leaving the data as an intiger data type
+    if (parseInt(years[0]) >= 1900 && parseInt(years[1]) <= 2000) { // askes "if the intigers now in that data set are now equal to or above 1900, AND equal to or below 2000"
+      ArtistsOf20thCentury.push(artists[i].name); // push the name of the artists within the above span of intigers into the new array.
+    }
+  }
+  return ArtistsOf20thCentury; // return all the names in the new array
 }
-
+console.log(get20s(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -259,8 +266,8 @@ function get20s(array) {
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
-   /*Your Code Here*/
+function removeArtist(array, number) {
+  array[number].pop
 }
    
 
