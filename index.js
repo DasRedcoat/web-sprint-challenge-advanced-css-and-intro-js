@@ -272,7 +272,7 @@ function get20s(array) {
 }
 // console.log (removeArtists(artists[0]));
 
-   
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
@@ -320,10 +320,22 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
-}
 
+/* 
+loop the array
+target the object of art works 100 or higher
+push the name key of those objects to the return output
+*/
+
+function lotsOfArt(array) {
+  let overAhundo = []
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].paintings > 100) 
+    overAhundo.push(array[i].name);
+  }
+  return overAhundo;
+}
+console.log(lotsOfArt(artists));
 
 
 
