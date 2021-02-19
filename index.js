@@ -247,14 +247,14 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array) {
   let ArtistsOf20thCentury = []; // declare an empty array for the result
   for (let i = 0; i < artists.length; i++) {  // loop through the artists array
-    let years = artists[i].years.split(" - "); // declare a year variable that splits the dividing dash out of the string, leaving the data as an intiger data type
-    if (parseInt(years[0]) >= 1900 && parseInt(years[1]) <= 2000) { // askes "if the intigers now in that data set are now equal to or above 1900, AND equal to or below 2000"
+    let years = artists[i].years.split(" - "); // declare a year variable that splits the dividing dash out of the string, converting the data to a 2 intiger data type only
+    if (parseInt(years[0]) >= 1900 && parseInt(years[1]) <= 2000) { // askes "if the intigers now remaining in that data set are now equal to or above 1900, AND equal to or below 2000"
       ArtistsOf20thCentury.push(artists[i].name); // push the name of the artists within the above span of intigers into the new array.
     }
   }
   return ArtistsOf20thCentury; // return all the names in the new array
 }
-console.log(get20s(artists))
+// console.log(get20s(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -266,9 +266,12 @@ console.log(get20s(artists))
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array, number) {
-  array[number].pop
+ function removeArtist(artists, num) {
+  console.log (artists.splice(num, 1))
+  return (artists.length);
 }
+// console.log (removeArtists(artists[0]));
+
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -287,8 +290,17 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+// { 
+//   id: 20,
+//   name: Tim, 
+//   years: 1991 - current day,
+//   genre: Web Design, 
+//   nationality: British
+//   bio: I will rue this day
+// } 
+
+function addArtist(array){
+    // return (array.push() 
   }
 
   

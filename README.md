@@ -23,9 +23,15 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+    Accessibility is all about accomodating all walks of life and making your web pages adaptable to their needs. Things such as responsive units, color overlays, larger buttons on mobile, different settings for people with disabilities, etc. Websites onn mobile that are all squished have not been optimized with media queries for different max width sizes of a device. Accessibility even comes down to using proper HTML semantics 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+    1) Use proper HTML semantics so a screen reader can find headers, sections, etc when reading for someone with hearing problems. 
+    2) When a website is accessed through  a mobile device or tablet, you can make buttons and certain divs that the user may interct with bigger, so that they can be clicked or see on a smaller screen. 
+    3) One accessibility option I hold dear is a coorblind option. You can set different display colors on background and text so they do not blur into the colors of other things on the page. 
 3. How would you explain the concept of a variable to someone new to programming?
+    - A variable can be anything you want it to be, a string, intiger, boolean. We declare a variable using let, const, and "never" var (or at least consider using it last if the others won't work well enough for your goal). Variables can be declared using an "=" and they can be redeclared throughout your functions and work as long as their declaration allows it. You should always name your variable something that relates to it's function or use in the code, so that other developers know what it does when they work with your code. 
 4. What is the purpose of using functions in code?
+    - Functions perform operations for us. They are custom, or pre-built (methods) so that we can create processes and tasks for the computer. A funtion can access an array and push the items to a new array, it could perform mathmatics, compare variables, many many things - in theory,  it could do "any" task you design it to do, if coded properly. A series of functions together, that take in other functions as parameters, can eventually perform a chain of tasks the user commands and run all the functions in series. Every time you click in a video game to attack, it performs functions to check character's attack, distance, damage, accuracy, critical hit, make a number appear above the enemy's head for the damage dealt. Eventually there is a function that checks if they're dead, and they die. It's all functions being processed inside the game.  
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
