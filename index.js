@@ -327,13 +327,13 @@ target the object of art works 100 or higher by IFING IT
 push the name key of those objects to the return output
 */
 
-function lotsOfArt(array) {
-  let overAhundo = []
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].paintings > 100) 
-    overAhundo.push(array[i].name);
+function lotsOfArt(array) {  // function takes an array as a parameter
+  let overAhundo = [] // delare an array to use
+  for (let i = 0; i < array.length; i++) { // loop through the array given at each interval
+    if (array[i].paintings >= 100) // target the object in the array and check if the value is over or equal to 100
+    overAhundo.push(array[i].name); // push the name in the object/results to the array declared above
   }
-  return overAhundo;
+  return overAhundo; // return the array
 }
 // console.log(lotsOfArt(artists));
 
