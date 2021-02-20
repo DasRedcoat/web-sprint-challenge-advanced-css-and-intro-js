@@ -323,7 +323,7 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 
 /* 
 loop the array
-target the object of art works 100 or higher
+target the object of art works 100 or higher by IFING IT
 push the name key of those objects to the return output
 */
 
@@ -335,7 +335,7 @@ function lotsOfArt(array) {
   }
   return overAhundo;
 }
-console.log(lotsOfArt(artists));
+// console.log(lotsOfArt(artists));
 
 
 
